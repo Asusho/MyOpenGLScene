@@ -30,6 +30,9 @@
     <ClCompile Include="Code\Texture2D.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="Code\Scene.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Code\Camera.h">
@@ -44,23 +47,5 @@
     <ClInclude Include="Code\Texture2D.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="shaders\bulb.frag" />
-    <None Include="shaders\bulb.vert" />
-    <None Include="shaders\lighting_blinn-phong.frag" />
-    <None Include="shaders\lighting_blinn-phong.vert" />
-    <None Include="shaders\lighting_dir.frag" />
-    <None Include="shaders\lighting_dir.vert" />
-    <None Include="shaders\lighting_dir_point_spot.frag" />
-    <None Include="shaders\lighting_dir_point_spot.vert" />
-    <None Include="shaders\lighting_phong.frag" />
-    <None Include="shaders\lighting_phong.vert" />
-    <None Include="shaders\lighting_phong_materials.frag" />
-    <None Include="shaders\lighting_phong_materials.vert" />
-    <None Include="shaders\lighting_point.frag" />
-    <None Include="shaders\lighting_point.vert" />
-    <None Include="shaders\lighting_spot.frag" />
-    <None Include="shaders\lighting_spot.vert" />
   </ItemGroup>
 </Project>

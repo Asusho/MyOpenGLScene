@@ -33,22 +33,54 @@
     <ClInclude Include="Code\Texture2D.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="shaders\bulb.frag" />
-    <None Include="shaders\bulb.vert" />
-    <None Include="shaders\lighting_blinn-phong.frag" />
-    <None Include="shaders\lighting_blinn-phong.vert" />
-    <None Include="shaders\lighting_dir.frag" />
-    <None Include="shaders\lighting_dir.vert" />
-    <None Include="shaders\lighting_dir_point_spot.frag" />
-    <None Include="shaders\lighting_dir_point_spot.vert" />
-    <None Include="shaders\lighting_phong.frag" />
-    <None Include="shaders\lighting_phong.vert" />
-    <None Include="shaders\lighting_phong_materials.frag" />
-    <None Include="shaders\lighting_phong_materials.vert" />
-    <None Include="shaders\lighting_point.frag" />
-    <None Include="shaders\lighting_point.vert" />
-    <None Include="shaders\lighting_spot.frag" />
-    <None Include="shaders\lighting_spot.vert" />
+    <Content Include="shaders\bulb.frag">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shaders\bulb.vert">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shaders\lighting_blinn-phong.frag">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shaders\lighting_blinn-phong.vert">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shaders\lighting_dir.frag">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shaders\lighting_dir.vert">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shaders\lighting_dir_point_spot.frag">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shaders\lighting_dir_point_spot.vert">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shaders\lighting_phong.frag">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shaders\lighting_phong.vert">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shaders\lighting_phong_materials.frag">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shaders\lighting_phong_materials.vert">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shaders\lighting_point.frag">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shaders\lighting_point.vert">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shaders\lighting_spot.frag">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shaders\lighting_spot.vert">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -166,6 +198,10 @@
       <AdditionalLibraryDirectories>$(SolutionDir)\..\ExternalRessources\glfw\lib-vc2019;$(SolutionDir)\..\ExternalRessources\glew\lib\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy  "$(SolutionDir)models\*" "$(TargetDir)models\"
+xcopy  "$(SolutionDir)textures\*" "$(TargetDir)textures\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
