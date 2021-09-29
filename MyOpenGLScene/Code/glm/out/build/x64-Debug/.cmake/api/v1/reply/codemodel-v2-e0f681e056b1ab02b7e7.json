@@ -1,0 +1,38 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"projectIndex" : 0,
+					"source" : "."
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Project"
+				}
+			],
+			"targets" : []
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "F:/Google Drive/Polytech/INFO/INFO4A/Semestre 8/REVA/OpenGL/OpenGL_Course/glm/out/build/x64-Debug",
+		"source" : "F:/Google Drive/Polytech/INFO/INFO4A/Semestre 8/REVA/OpenGL/OpenGL_Course/glm"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}
